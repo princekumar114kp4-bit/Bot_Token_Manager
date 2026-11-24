@@ -115,7 +115,7 @@ try:  # Optional: used to make photos square / valid JPEGs.
     from PIL import Image
 except Exception:  # pragma: no cover
     Image = None
-
+PLACEHOLDER = ""
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "9049781241:AAG0fEMiKUJr6TvfX0SfKvxLX1LBlps-_WM").strip()
 
 API_TIMEOUT = 30                      # seconds, every request to Telegram
