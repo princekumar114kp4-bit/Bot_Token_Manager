@@ -116,8 +116,7 @@ try:  # Optional: used to make photos square / valid JPEGs.
 except Exception:  # pragma: no cover
     Image = None
 
-PLACEHOLDER = "9049781241:AAG0fEMiKUJr6TvfX0SfKvxLX1LBlps-_WM"
-BOT_TOKEN = os.environ.get("BOT_TOKEN", PLACEHOLDER).strip()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "9049781241:AAG0fEMiKUJr6TvfX0SfKvxLX1LBlps-_WM").strip()
 
 API_TIMEOUT = 30                      # seconds, every request to Telegram
 SESSION_TTL = 30 * 60                 # forget idle sessions (and tokens) after 30 min
